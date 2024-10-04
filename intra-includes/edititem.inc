@@ -8,6 +8,7 @@
     <input name="stage" id="stage" value="form" type="hidden"/>
     <input name="method" id="method" value="edititem" type="hidden"/>
     <input name="backend" id="backend" value="RapidILL" type="hidden"/>
+    [% IF Koha.Version.major >= 24 %][% INCLUDE 'csrf-token.inc' %][% END %]
     <ol>
       <li>
         <label for="RapidRequestType">Type:</label>

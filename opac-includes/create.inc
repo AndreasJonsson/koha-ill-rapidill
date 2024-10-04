@@ -32,6 +32,7 @@
     <input name="stage" id="stage" value="validate" type="hidden"/>
     <input name="method" id="method" value="create" type="hidden"/>
     <input name="backend" id="backend" value="[% whole.value.other.backend %]" type="hidden"/>
+    [% IF Koha.Version.major >= 24 %][% INCLUDE 'csrf-token.inc' %][% END %]
     <ol>
       <li>
         <label for="RapidRequestType">Type:</label>
